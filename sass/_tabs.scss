@@ -1,0 +1,38 @@
+.tabs-container{
+  padding: 1%;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.tabs{
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  display: inline-block;
+}
+
+.tab__item{
+  @include neon;
+  color: #DF3FA4;
+  cursor: url(../img/pointer-6.png), auto;
+  font-size: 1.5em;
+  font-weight: bold;
+  padding: 12px 35px;
+  display: inherit;
+}
+
+.panels{
+  max-width: 75%;
+  margin: 0 auto;
+}
+
+.panels__item{
+  position: absolute;
+  left: -3000px;
+}
+
+.active{
+  position: relative;
+  left: 0;
+}

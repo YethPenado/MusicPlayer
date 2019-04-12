@@ -1,0 +1,71 @@
+.clearfix{
+  &::after {
+    display: block;
+    content: "";
+    clear: both;
+  }
+}
+
+.column{
+  @include neon;
+  height: 400px;
+  width: 50%;
+  float: left;
+  box-sizing: border-box;
+  overflow: auto;
+}
+
+.songs-toolbar, .import-form{
+  @include neon;
+  color: white;
+  margin-top: 3%;
+  padding: 25px 40px;
+}
+
+.import-form form{
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.player, .modal-delete, .modal-edit{
+  @include neon;
+  max-width: 75%;
+  margin: 0 auto;
+  box-sizing: border-box;
+  padding: 20px 40px;
+}
+
+.player{
+  text-align: center;
+}
+.modal-delete, .modal-edit{
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  top: 10%;
+  right: 0;
+  background-color: #33312F;
+  max-width: 75%;
+}
+
+.modal-delete p{
+  font-size: 1.5em;
+}
+
+.modal-delete{
+  height: 40%;
+}
+
+.modal-edit{
+  height: 70%;
+  padding-left: 10%;
+}
+
+.modal-edit form {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+*[invisible] {
+  visibility: hidden;
+}

@@ -1,0 +1,80 @@
+button{
+  border: none;
+  cursor: url(../img/pointer-6.png), auto;
+}
+
+.delete, #reset, #deleteModal, #cancelEdit{
+  border: 2px solid;
+  box-shadow: 0 0 7px 2px #D04330,
+  inset 0 0 7px 2px #D04330;
+  color: #E02910;
+}
+
+.edit, #save, #cancelModal, #saveEdit{
+  border: 2px solid;
+  box-shadow: 0 0 10px 2px #1EE010,
+  inset 0 0 10px 2px #1EE010;
+  color: #2DB623;
+  margin-right: 25px;
+}
+
+.form-buttons{
+  background-color: transparent;
+  border-radius: 8px;
+  margin: 3% 1%;
+  padding: 6px 15px;
+  font-size: 1.75em;
+}
+
+.editModal-buttons{
+  background-color: transparent;
+  border-radius: 8px;
+  font-size: 1.3em;
+  margin: 3% 1%;
+  padding: 6px 15px;
+}
+
+.icon-button{
+  background-color: transparent;
+  border-radius: 8px;
+  float: right;
+  padding: 10px 12px;
+}
+
+.icons{
+  font-size: 1.75em;
+}
+
+.main-button{
+  animation: main-buttons 5s infinite;
+  background-color: rgba(255, 0, 191, 0.096);
+  border: 2px solid;
+  box-shadow: 0 0 7px 2px #F41CA5,
+  inset 0 0 7px 2px #F41CA5;
+  color: #DF3FA4;
+  font-size: 1.5em;
+  font-weight: bold;
+  margin-right: 2%;
+  padding: 12px 35px;
+}
+
+.modal-buttons{
+  margin-top: 2%;
+  margin-bottom: 2%;
+  margin-right: 1%;
+  background: transparent;
+  padding: 10px 20px;
+  font-size: 1em;
+}
+
+.player-buttons{
+  background-color: transparent;
+  border-radius: 8px;
+  padding: 10px 15px;
+  border: 2px solid;
+  box-shadow: 0 0 7px 2px #F41CA5,
+  inset 0 0 7px 2px #F41CA5;
+  color: #DF3FA4;
+  margin-right: 1%;
+  margin-bottom: 2%;
+}

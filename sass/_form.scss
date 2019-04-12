@@ -1,0 +1,53 @@
+input{
+  background-color: rgba(255, 193, 79, 0.055);
+  border: 2px solid #DF8013;
+  box-shadow: 0 0 8px 2px #DF8013, 
+  inset 0 0 8px 2px #DF8013;
+  color: whitesmoke;
+  margin-top: 1%;
+  padding: 10px 40px;
+}
+
+label{
+  color: #F48F1C;
+  display: block;
+  font-size: 1.25em;
+  margin-top: 2%;
+}
+
+select{
+  background-color: rgba(79, 205, 255, 0.068);
+  border: 2px solid;
+  box-shadow: 0 0 7px 2px #108da7,
+  inset 0 0 7px 2px #108da7;
+  color: #1ddada;
+  cursor: url(../img/pointer-6.png), auto;
+  font-size: 1.2em;
+  font-weight: bold;
+  margin-right: 25px;
+  -moz-appearance: none;
+  padding: 6px 20px;
+}
+
+select{
+  background-color: rgba(79, 205, 255, 0.068);
+  border: 2px solid;
+  box-shadow: 0 0 7px 2px #108da7,
+  inset 0 0 7px 2px #108da7;
+  color: #1ddada;
+  cursor: url(../img/pointer-6.png), auto;
+  font-size: 1.2em;
+  font-weight: bold;
+  margin-right: 25px;
+  margin-top: 0;
+}
+
+#songs-search{
+  background-color: rgba(79, 205, 255, 0.068);
+  border: 2px solid;
+  box-shadow: 0 0 7px 2px #108da7,
+  inset 0 0 7px 2px #108da7;
+  color: #1ddada;
+  font-size: 1em;
+  margin-top: 0;
+}

@@ -1,0 +1,65 @@
+*{
+  font-family: 'Baloo Chettan', cursive;
+  letter-spacing: 2px;
+}
+
+audio{
+  cursor: url(../img/pointer-6.png), auto;
+  width: 350px;
+}
+
+h2{
+  font-size: 2em;
+  color: #F48F1C;
+}
+
+h3{
+  font-size: 2em;
+  color: #E02910;
+}
+
+html{
+  background-color: #1A1919;
+  color: white;
+  cursor: url(../img/pointer.png), auto;
+}
+
+img{
+  height: 300px;
+  border: 5px solid white;
+}
+
+li{
+  border-bottom: 2px solid #F41CA5;
+  cursor: url(../img/pointer-6.png), auto;
+  font-size: 1.1em;
+  padding: 8px 0;
+}
+
+li:active{
+  background-color: #F41CA5;
+  color: white;
+}
+
+p{
+  font-size: 1.2em;
+}
+
+span{
+  color: #F48F1C;
+}
+
+.content{
+  height: 400px;
+}
+
+::-webkit-scrollbar{
+  border: 3px solid rgba(255, 235, 13, 0.342);
+  border-radius: 10px;
+  background-color: rgba(217, 255, 0, 0.096);
+}
+
+::-webkit-scrollbar-thumb{
+  border-radius: 10px;
+  background-color: rgba(255, 218, 10, 0.246);
+}

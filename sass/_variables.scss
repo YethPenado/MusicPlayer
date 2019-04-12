@@ -1,0 +1,49 @@
+@mixin neon{
+  animation: neon 10s infinite;
+  background-color: rgba(255, 0, 191, 0.096);
+  border: 2px solid;
+  box-shadow: 0 0 7px 2px #F41CA5,
+  inset 0 0 7px 2px #F41CA5;
+}
+
+@keyframes neon{
+  0% {
+    border-color: transparent;
+    opacity: 0.2;
+  }
+
+  2% {
+    border-color: #F41CA5;
+    opacity: 1;
+  }
+
+  4% {
+    border-color: transparent;
+    opacity: 0.2;
+  }
+
+  8% {
+    border-color: #F41CA5;
+    opacity: 1;
+  }
+
+  28% {
+    border-color: #F41CA5;
+    opacity: 1;
+  }
+
+  30% {
+    border-color: transparent;
+    opacity: 0.2;
+  }
+
+  36% {
+    border-color: #F41CA5;
+    opacity: 1;
+  }
+
+  100% {
+    border-color: #F41CA5;
+    opacity: 1;
+  }
+}

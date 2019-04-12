@@ -1,0 +1,295 @@
+@keyframes neon {
+  0% {
+    border-color: transparent;
+    opacity: 0.2; }
+  2% {
+    border-color: #F41CA5;
+    opacity: 1; }
+  4% {
+    border-color: transparent;
+    opacity: 0.2; }
+  8% {
+    border-color: #F41CA5;
+    opacity: 1; }
+  28% {
+    border-color: #F41CA5;
+    opacity: 1; }
+  30% {
+    border-color: transparent;
+    opacity: 0.2; }
+  36% {
+    border-color: #F41CA5;
+    opacity: 1; }
+  100% {
+    border-color: #F41CA5;
+    opacity: 1; } }
+* {
+  font-family: 'Baloo Chettan', cursive;
+  letter-spacing: 2px; }
+
+audio {
+  cursor: url(../img/pointer-6.png), auto;
+  width: 350px; }
+
+h2 {
+  font-size: 2em;
+  color: #F48F1C; }
+
+h3 {
+  font-size: 2em;
+  color: #E02910; }
+
+html {
+  background-color: #1A1919;
+  color: white;
+  cursor: url(../img/pointer.png), auto; }
+
+img {
+  height: 300px;
+  border: 5px solid white; }
+
+li {
+  border-bottom: 2px solid #F41CA5;
+  cursor: url(../img/pointer-6.png), auto;
+  font-size: 1.1em;
+  padding: 8px 0; }
+
+li:active {
+  background-color: #F41CA5;
+  color: white; }
+
+p {
+  font-size: 1.2em; }
+
+span {
+  color: #F48F1C; }
+
+.content {
+  height: 400px; }
+
+::-webkit-scrollbar {
+  border: 3px solid rgba(255, 235, 13, 0.342);
+  border-radius: 10px;
+  background-color: rgba(217, 255, 0, 0.096); }
+
+::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  background-color: rgba(255, 218, 10, 0.246); }
+
+.clearfix::after {
+  display: block;
+  content: "";
+  clear: both; }
+
+.column {
+  animation: neon 10s infinite;
+  background-color: rgba(255, 0, 191, 0.096);
+  border: 2px solid;
+  box-shadow: 0 0 7px 2px #F41CA5, inset 0 0 7px 2px #F41CA5;
+  height: 400px;
+  width: 50%;
+  float: left;
+  box-sizing: border-box;
+  overflow: auto; }
+
+.songs-toolbar, .import-form {
+  animation: neon 10s infinite;
+  background-color: rgba(255, 0, 191, 0.096);
+  border: 2px solid;
+  box-shadow: 0 0 7px 2px #F41CA5, inset 0 0 7px 2px #F41CA5;
+  color: white;
+  margin-top: 3%;
+  padding: 25px 40px; }
+
+.import-form form {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); }
+
+.player, .modal-delete, .modal-edit {
+  animation: neon 10s infinite;
+  background-color: rgba(255, 0, 191, 0.096);
+  border: 2px solid;
+  box-shadow: 0 0 7px 2px #F41CA5, inset 0 0 7px 2px #F41CA5;
+  max-width: 75%;
+  margin: 0 auto;
+  box-sizing: border-box;
+  padding: 20px 40px; }
+
+.player {
+  text-align: center; }
+
+.modal-delete, .modal-edit {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  top: 10%;
+  right: 0;
+  background-color: #33312F;
+  max-width: 75%; }
+
+.modal-delete p {
+  font-size: 1.5em; }
+
+.modal-delete {
+  height: 40%; }
+
+.modal-edit {
+  height: 70%;
+  padding-left: 10%; }
+
+.modal-edit form {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); }
+
+*[invisible] {
+  visibility: hidden; }
+
+.tabs-container {
+  padding: 1%;
+  margin: 0 auto;
+  text-align: center; }
+
+.tabs {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  display: inline-block; }
+
+.tab__item {
+  animation: neon 10s infinite;
+  background-color: rgba(255, 0, 191, 0.096);
+  border: 2px solid;
+  box-shadow: 0 0 7px 2px #F41CA5, inset 0 0 7px 2px #F41CA5;
+  color: #DF3FA4;
+  cursor: url(../img/pointer-6.png), auto;
+  font-size: 1.5em;
+  font-weight: bold;
+  padding: 12px 35px;
+  display: inherit; }
+
+.panels {
+  max-width: 75%;
+  margin: 0 auto; }
+
+.panels__item {
+  position: absolute;
+  left: -3000px; }
+
+.active {
+  position: relative;
+  left: 0; }
+
+button {
+  border: none;
+  cursor: url(../img/pointer-6.png), auto; }
+
+.delete, #reset, #deleteModal, #cancelEdit {
+  border: 2px solid;
+  box-shadow: 0 0 7px 2px #D04330, inset 0 0 7px 2px #D04330;
+  color: #E02910; }
+
+.edit, #save, #cancelModal, #saveEdit {
+  border: 2px solid;
+  box-shadow: 0 0 10px 2px #1EE010, inset 0 0 10px 2px #1EE010;
+  color: #2DB623;
+  margin-right: 25px; }
+
+.form-buttons {
+  background-color: transparent;
+  border-radius: 8px;
+  margin: 3% 1%;
+  padding: 6px 15px;
+  font-size: 1.75em; }
+
+.editModal-buttons {
+  background-color: transparent;
+  border-radius: 8px;
+  font-size: 1.3em;
+  margin: 3% 1%;
+  padding: 6px 15px; }
+
+.icon-button {
+  background-color: transparent;
+  border-radius: 8px;
+  float: right;
+  padding: 10px 12px; }
+
+.icons {
+  font-size: 1.75em; }
+
+.main-button {
+  animation: main-buttons 5s infinite;
+  background-color: rgba(255, 0, 191, 0.096);
+  border: 2px solid;
+  box-shadow: 0 0 7px 2px #F41CA5, inset 0 0 7px 2px #F41CA5;
+  color: #DF3FA4;
+  font-size: 1.5em;
+  font-weight: bold;
+  margin-right: 2%;
+  padding: 12px 35px; }
+
+.modal-buttons {
+  margin-top: 2%;
+  margin-bottom: 2%;
+  margin-right: 1%;
+  background: transparent;
+  padding: 10px 20px;
+  font-size: 1em; }
+
+.player-buttons {
+  background-color: transparent;
+  border-radius: 8px;
+  padding: 10px 15px;
+  border: 2px solid;
+  box-shadow: 0 0 7px 2px #F41CA5, inset 0 0 7px 2px #F41CA5;
+  color: #DF3FA4;
+  margin-right: 1%;
+  margin-bottom: 2%; }
+
+input {
+  background-color: rgba(255, 193, 79, 0.055);
+  border: 2px solid #DF8013;
+  box-shadow: 0 0 8px 2px #DF8013,  inset 0 0 8px 2px #DF8013;
+  color: whitesmoke;
+  margin-top: 1%;
+  padding: 10px 40px; }
+
+label {
+  color: #F48F1C;
+  display: block;
+  font-size: 1.25em;
+  margin-top: 2%; }
+
+select {
+  background-color: rgba(79, 205, 255, 0.068);
+  border: 2px solid;
+  box-shadow: 0 0 7px 2px #108da7, inset 0 0 7px 2px #108da7;
+  color: #1ddada;
+  cursor: url(../img/pointer-6.png), auto;
+  font-size: 1.2em;
+  font-weight: bold;
+  margin-right: 25px;
+  -moz-appearance: none;
+  padding: 6px 20px; }
+
+select {
+  background-color: rgba(79, 205, 255, 0.068);
+  border: 2px solid;
+  box-shadow: 0 0 7px 2px #108da7, inset 0 0 7px 2px #108da7;
+  color: #1ddada;
+  cursor: url(../img/pointer-6.png), auto;
+  font-size: 1.2em;
+  font-weight: bold;
+  margin-right: 25px;
+  margin-top: 0; }
+
+#songs-search {
+  background-color: rgba(79, 205, 255, 0.068);
+  border: 2px solid;
+  box-shadow: 0 0 7px 2px #108da7, inset 0 0 7px 2px #108da7;
+  color: #1ddada;
+  font-size: 1em;
+  margin-top: 0; }
+
+/*# sourceMappingURL=main.css.map */

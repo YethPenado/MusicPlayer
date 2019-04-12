@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <script defer src="https://use.fontawesome.com/releases/v5.7.2/js/all.js" integrity="sha384-0pzryjIRos8mFBWMzSSZApWtPl/5++eIfzYmTgBBmXYdhvxPc+XcFEk+zJwDgWbP" crossorigin="anonymous"></script>
+  <link href="https://fonts.googleapis.com/css?family=Asap+Condensed|Baloo+Chettan" rel="stylesheet">
+  <link rel="shortcut icon" type="image/x-icon" href="img/favicon.png"/>
+  <link rel="stylesheet" href="css/main.css"/>
+  <title>Music Player</title>
+</head>
+
+<body>
+  <div class="tabs-container">
+    <ul class="tabs" id="tabs">
+      <li class="tab__item active">Songs</li>
+      <li class="tab__item">Import</li>
+    </ul>
+  </div>
+
+  <div class="panels clearfix">
+    <div class="panels__item active">
+      <section class="songs-toolbar">
+        <select name="sort" id="sort-songs">
+          <option disabled selected>Sort by</option>
+          <option value="Artist">Artist</option>
+          <option value="Album">Album</option>
+          <option value="Name">Name</option>
+          <option value="Start">Start</option>
+          <option value="Year">Year</option>
+        </select>
+        <input type="search" id="songs-search" name="Songs">
+        <button disabled class="icon-button delete" id="delete" ><i class="fas fa-trash-alt icons"></i></button>
+        <button disabled class="icon-button edit" id="edit"><i class="fas fa-edit icons"></i></button>
+      </section>
+
+      <section class="songs-container column">
+        <ul class="songs content">
+        </ul>
+      </section>
+
+      <section class="playlist-container column">
+        <ul class="playlist content">
+        </ul>
+      </section>
+    </div>
+
+    <div class="panels__item import-form clearfix">
+      <section class="form-col">
+        <form>
+          <div>
+            <label for="name">Name<span>*</span></label>
+            <input type="text" name="name" id="name" required>
+
+            <label for="album">Album<span>*</span></label>
+            <input type="text" name="album" id="album" required>
+
+            <label for="artist">Artist<span>*</span></label>
+            <input type="text" name="artist" id="artist" required>
+
+            <label for="year">Year<span>*</span></label>
+            <input type="date" name="year" id="year" required>
+          </div>
+
+          <div>
+            <label for="cover">Cover</label>
+            <input type="text" name="cover" id="cover">
+
+            <label for="mp3">MP3</label>
+            <input type="text" name="mp3" id="mp3">
+
+            <label for="wav">WAV</label>
+            <input type="text" name="wav" id="wav">
+
+            <label for="ogg">OGG</label>
+            <input type="text" name="ogg" id="ogg">
+          </div>
+
+          <button id="save" class="form-buttons" type="submit"><i class="fas fa-save"></i></button>
+          <button id="reset" class="form-buttons" type="reset"><i class="fas fa-undo-alt"></i></button>
+        </form>
+      </section>
+    </div>
+  </div>
+  </div>
+
+  <section class="player clearfix">
+    <p id="song-name"></p>
+    <p id="song-artist"></p>
+    <p id="song-album"></p>
+    <img src="" alt="" id="song-cover">
+    <br>
+    <audio controls id="audio"></audio>
+    <br>
+    <button id="backward" class="player-buttons"><i class="fas fa-step-backward icons"></i></button>
+    <button id="forward" class="player-buttons"><i class="fas fa-step-forward icons"></i></button>
+  </section>
+
+  <section invisible modal class="modal-delete">
+    <h3>Delete Song</h3>
+    <p>Are you sure you want to remove this song?</p>
+    <p>This action will delete the song and will removed on all playlist.</p>
+
+    <button class="modal-buttons" id="cancelModal">Cancel</button>
+    <button class="modal-buttons" id="deleteModal">Delete</button>
+  </section>
+
+  <section invisible modal class="modal-edit">
+    <h2>EDIT SONG</h2>
+    <form>
+      <div>
+        <label for="edit-name">Name<span>*</span></label>
+        <input type="text" name="edit-name" id="edit-name" required>
+
+        <label for="edit-album">Album<span>*</span></label>
+        <input type="text" name="edit-album" id="edit-album" required>
+
+        <label for="edit-artist">Artist<span>*</span></label>
+        <input type="text" name="edit-artist" id="edit-artist" required>
+
+        <label for="edit-year">Year<span>*</span></label>
+        <input type="date" name="edit-year" id="edit-year" required>
+      </div>
+      <div>
+        <label for="edit-cover">Cover</label>
+        <input type="text" name="edit-cover" id="edit-cover">
+
+        <label for="edit-mp3">MP3</label>
+        <input type="text" name="edit-mp3" id="edit-mp3">
+
+        <label for="edit-wav">WAV</label>
+        <input type="text" name="edit-wav" id="edit-wav">
+
+        <label for="edit-ogg">OGG</label>
+        <input type="text" name="edit-ogg" id="edit-ogg">
+      </div>
+    </form>
+    <button id="saveEdit" class="editModal-buttons" type="submit"><i class="fas fa-save"></i></button>
+    <button id="cancelEdit" class="editModal-buttons" type="reset">Cancel</button>
+  </section>
+  
+  <script src="js/data.js"></script>
+  <script src="js/singletonSongs.js"></script>
+  <script src="js/tabs.js"></script>
+  <script src="js/playlist.js"></script>
+  <script src="js/dragdrop.js"></script>
+  <script src="js/player.js"></script>
+  <script src="js/import.js"></script>
+  <script src="js/toolbar.js"></script>
+</body>
+</html>
