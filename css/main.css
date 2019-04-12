@@ -65,7 +65,7 @@ span {
   color: #F48F1C; }
 
 .content {
-  height: 400px; }
+  height: 500px; }
 
 ::-webkit-scrollbar {
   border: 3px solid rgba(255, 235, 13, 0.342);
@@ -86,7 +86,7 @@ span {
   background-color: rgba(255, 0, 191, 0.096);
   border: 2px solid;
   box-shadow: 0 0 7px 2px #F41CA5, inset 0 0 7px 2px #F41CA5;
-  height: 400px;
+  height: 500px;
   width: 50%;
   float: left;
   box-sizing: border-box;
